@@ -29,14 +29,14 @@ function App() {
     </form> */}
     
     <Router>
-          <Navbar/>
+           <  Navbar ></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route  path="/products" element={<Products serch={serch} />} /> */}
           <Route  path="/products" element={<Products  />} />
-          {/* <Route  path="/product/1" element={<Product />}    /> */}
-          <Route path="/product/:id" element={<Product />} />
-          {/* <Route path="/product/:id" render={(props) => <Product {...props} />} /> */}
+          <Route  path="/product/:id" element={<Product />}    />
+          {/* <Route path="/product/1" element={<Product />} /> */}
+          {/* <Route path="/product/1" render={(props) => <Product {...props} />} /> */}
       
      
 

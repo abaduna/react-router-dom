@@ -1,12 +1,14 @@
+import { useParams } from "react-router-dom";
 
-const Product = ({ match }) => {
-  console.log(match);
+const Product = (props) => {
+
   console.log(`se ejecuto product`);
-  const { id } = match.params;
-  console.log(id);
+  console.log(props);
+  const { id } = useParams();
+  console.log("Product ID:", id);
   return (
     <>
-      <h1>Product Page</h1>
+      <h1>Product Page <b>{id}</b></h1>
     </>
   );
 }
